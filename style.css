@@ -1,0 +1,53 @@
+:root{--link:#3366cc;--visited:#795cb2;--line:#a2a9b1;--soft:#f8f9fa;--paper:#fff;--ink:#202122;--muted:#54595d;--cap:#cedff2;--th:#eaecf0;--btn:#3366cc;--btnh:#2a4b8d}
+html[data-theme="dark"]{color-scheme:dark;--link:#7aa7ff;--visited:#b9a2e6;--line:#3d434b;--soft:#15171a;--paper:#1d2024;--ink:#e4e6e9;--muted:#a3a9b0;--cap:#2b3b57;--th:#2a2e34;--btn:#3a62b8;--btnh:#4b74cc}
+*{box-sizing:border-box}
+body{margin:0;background:var(--soft);color:var(--ink);font:.9375rem/1.65 -apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+a{color:var(--link);text-decoration:none}a:visited{color:var(--visited)}a:hover{text-decoration:underline}
+a:focus-visible,input:focus-visible{outline:2px solid var(--link);outline-offset:2px}
+.search input{width:100%;padding:.45rem .7rem;border:1px solid var(--line);border-radius:2px;font:inherit}
+#results{position:absolute;left:0;right:0;top:100%;background:var(--paper);border:1px solid var(--line);box-shadow:0 2px 6px rgba(0,0,0,.15);z-index:5}
+#results a{display:block;padding:.45rem .7rem;border-bottom:1px solid var(--th)}#results a:hover{background:var(--soft);text-decoration:none}
+#results span{display:block;padding:.45rem .7rem;color:var(--muted)}
+#side h3{margin:0 0 .4rem;font-size:.8rem;color:var(--muted);font-weight:600}
+#side ul{list-style:none;margin:0;padding:0}#side li{padding:.18rem 0}
+#side a.on{color:var(--ink);font-weight:600}
+h1,h2,h3{font-family:Georgia,"Linux Libertine",serif;font-weight:400;line-height:1.3}
+h1{font-size:1.9rem;margin:.2rem 0 .8rem;border-bottom:1px solid var(--line);padding-bottom:.2rem}
+h2{font-size:1.45rem;margin:1.6rem 0 .6rem;border-bottom:1px solid var(--line);padding-bottom:.15rem}
+h3{font-size:1.15rem;margin:1.2rem 0 .4rem;font-weight:600}
+.hat{font-style:italic;color:var(--muted);margin:0 0 .8rem}
+.infobox{float:right;width:21rem;max-width:100%;margin:.3rem 0 1rem 1.5rem;border:1px solid var(--line);background:var(--soft);font-size:.88rem;border-collapse:collapse}
+.infobox caption{background:var(--cap);font-weight:700;padding:.45rem;font-size:1rem}
+.infobox th{text-align:left;vertical-align:top;padding:.3rem .5rem;width:38%}.infobox td{padding:.3rem .5rem}
+.infobox img,figure img{display:block;max-width:100%}
+.infobox .pic{text-align:center;padding:.6rem}
+figure{margin:.5rem 0 1rem 1.5rem;float:right;width:15rem;border:1px solid var(--line);background:var(--soft);padding:.4rem;font-size:.85rem}
+figure.left{float:left;margin:.5rem 1.5rem 1rem 0}
+.toc{display:inline-block;border:1px solid var(--line);background:var(--soft);padding:.6rem 1rem;margin:.4rem 0 1rem;font-size:.9rem}
+.toc b{display:block;text-align:center;margin-bottom:.3rem}.toc ol{margin:0;padding-left:1.3rem}
+table.data{border-collapse:collapse;margin:1rem 0;width:100%;clear:both}
+table.data th,table.data td{border:1px solid var(--line);padding:.4rem .7rem;text-align:left;vertical-align:top}
+table.data th{background:var(--th)}
+.see{clear:both}
+.page{display:grid;grid-template-columns:15rem minmax(0,1fr);min-height:100vh}
+#side{padding:1.25rem 1rem;position:sticky;top:0;align-self:start;height:100vh;overflow-y:auto}
+.logo{display:block;text-align:center;font:1.3rem Georgia,"Linux Libertine",serif;color:var(--ink)!important}
+.logo img{display:block;width:150px;height:auto;margin:0 auto .5rem}
+.logo small{display:block;font:.75rem sans-serif;color:var(--muted)}
+.search{position:relative;margin:1rem 0 1.5rem}
+.article{background:var(--paper);border-left:1px solid var(--line);padding:1.5rem 2.5rem 2rem;min-height:100vh}
+footer{margin-left:15rem;padding:1rem 2.5rem 2rem;font-size:.8rem;color:var(--muted)}
+@media(max-width:800px){.page{grid-template-columns:1fr}#side{position:static;height:auto;padding:.8rem 1.25rem;border-bottom:1px solid var(--line);background:var(--paper)}
+.logo img{width:90px}#side ul{display:flex;flex-wrap:wrap;gap:.3rem 1rem}.article{padding:1rem;border-left:0;min-height:0}
+.infobox,figure{float:none;width:100%;margin:0 0 1rem}footer{margin-left:0;padding:1rem}}
+.btn{display:inline-block;padding:.5rem 1.1rem;background:var(--btn);color:#fff!important;border-radius:2px;font-weight:600}
+.btn:hover{background:var(--btnh);text-decoration:none}
+.cv{display:block;width:100%;height:85vh;min-height:600px;border:1px solid var(--line);margin-top:1rem}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(14rem,1fr));gap:1rem;clear:both;margin:1rem 0}
+.gallery figure{float:none;width:auto;margin:0}
+.search input{background:var(--paper);color:var(--ink)}
+#side h3.ap{margin-top:1.5rem}
+.themebtn{width:100%;padding:.45rem .6rem;border:1px solid var(--line);background:var(--paper);color:var(--ink);font:inherit;cursor:pointer;border-radius:2px}
+.themebtn:hover{background:var(--soft)}
+html[data-font="large"]{font-size:120%}
+.themebtn+.themebtn{margin-top:.5rem}
